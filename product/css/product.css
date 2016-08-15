@@ -12,7 +12,7 @@ a:hover {
     text-decoration: underline;
 }
 
-img {
+input {
     border: none;
 }
 body {
@@ -112,12 +112,42 @@ body {
     margin-top: 48px;
     height: 298px;
 }
+.view {
+    background: url(../images/1.png) repeat;
+}
+
+.black {
+    width: 100%;
+    height: 0;
+    background: #000000;
+    opacity: 0.75;
+    transition: all 2s ease;
+}
+.black input {
+    
+    text-align: center;
+    display: none;
+    background-color: #37b1ca;
+    color: #ffffff;
+    font: 6.16px '微软雅黑';
+}
+
+.view:hover .black {
+    height: 100%;  
+}
+
+.view:hover .black input {
+    display: block;
+    margin: auto;
+
+}
+
 .img1 {
     height: 100%;
     width: 204px;
     float: left;
 }
-.pic1 div {
+.div1,.div2 {
     float: left;
     margin-left: 19px;
     height: 100%;
@@ -200,14 +230,18 @@ body {
 }
 .rounded-rectangle {
     text-align: center;
-    font: 10.19px '微软雅黑';
-    line-height: 32px;
     width: 52px;
     height: 32px;
     margin-left: 28px;
     background-color: #e2e2e2;
     border-radius: 10%;
     transition: all 1s ease-in-out;
+}
+
+.rounded-rectangle a{
+    color: #000000;
+    font: 10.19px '微软雅黑';
+    line-height: 32px;
 }
 
 .rounded-rectangle:hover {
